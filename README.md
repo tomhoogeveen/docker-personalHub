@@ -23,6 +23,12 @@ What do you need?
  - Pushbullet channel name
  - Plexpy APIkey
  - Plexpy location(url)
+ - create a client_secret.json following step 1 from this link https://developers.google.com/google-apps/calendar/quickstart/php
+     And mount it ()
 
+
+How do I run this container?
+------------------
+docker run -it --name=personalhub -p 8085:80 -v <dir with client_secret.json>:/app/personalHub/web/credentials/secret homeserverdev/docker-personalhub
 
 This image is based on https://github.com/fazy/docker-apache-symfony.

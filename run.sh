@@ -15,6 +15,7 @@ php bin/console assets:install web
 php bin/console assetic:dump
 
 chmod -R 777 .
+mkdir /app/personalHub/web/credentials/secret
 
 php bin/console app:google_calendar_command
 chmod -R 777 .
