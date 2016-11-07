@@ -25,11 +25,11 @@ ADD vhost.conf /etc/apache2/sites-available/000-default.conf
 
 
 # Add main start script for when image launches
-ADD run.sh /run.sh
-RUN chmod 0755 /run.sh
+ADD /run.sh /app/run.sh
+RUN chmod 0755 /app/run.sh
 
 # Main attributes for running the container
 WORKDIR /app
 EXPOSE 80
-CMD ["/run.sh"]
+CMD ["/app/run.sh"]
 

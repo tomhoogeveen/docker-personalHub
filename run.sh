@@ -3,6 +3,8 @@
 
 git clone https://gitlab.com/tomhoogeveen/personalHub.git
 cd personalHub
+mv /app/secret/client_secret.json /app/personalhub/web/credentials
+
 curl -sS https://getcomposer.org/installer | php -- --install-dir=/usr/local/bin --filename=composer
 chmod -R 777 .
 php /usr/local/bin/composer install
