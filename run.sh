@@ -4,7 +4,7 @@ git clone https://gitlab.com/tomhoogeveen/personalHub.git
 cd personalHub
 chmod -R 777 .
 mkdir /app/personalHub/web/credentials
-mv /app/secret/client_secret.json /app/personalHub/web/credentials/client_secret.json
+cp /app/secret/client_secret.json /app/personalHub/web/credentials/client_secret.json
 
 curl -sS https://getcomposer.org/installer | php -- --install-dir=/usr/local/bin --filename=composer
 chmod -R 777 .

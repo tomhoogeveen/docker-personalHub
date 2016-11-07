@@ -32,4 +32,3 @@ RUN chmod 0755 /app/run.sh
 WORKDIR /app
 EXPOSE 80
 CMD ["/app/run.sh"]
-
